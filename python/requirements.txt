@@ -1,0 +1,5 @@
+celery==4.3.0
+Flask
+redis
+Werkzeug
+python-dotenv
