@@ -13,7 +13,7 @@ def index():
     """Add a new task and start running it after 10 seconds."""
     return (
         jsonify(
-            {"Hello": "Full metal"}
+            {"Hello": "World"}
         ),
         202,
     )

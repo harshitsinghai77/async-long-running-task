@@ -13,8 +13,8 @@ flask_app  = Flask(__name__)
 # celery = make_celery(flask_app )
 
 # Celery configuration
-flask_app.config['CELERY_BROKER_URL'] = 'redis://127.0.0.1:6379'
-flask_app.config['CELERY_RESULT_BACKEND'] = 'redis://127.0.0.1:6379'
+flask_app.config['CELERY_BROKER_URL'] = 'redis://redis:6379/0'
+flask_app.config['CELERY_RESULT_BACKEND'] = 'redis://redis:6379/0'
 
 # Initialize Celery
 celery = Celery(flask_app.name, backend=flask_app.config['CELERY_RESULT_BACKEND'], broker=flask_app.config['CELERY_BROKER_URL'])
