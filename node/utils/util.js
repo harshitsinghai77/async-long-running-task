@@ -1,11 +1,10 @@
-const response = (success, message, data) => {
-  return {
-    success,
-    message,
-    data,
-  };
-};
+const response = (success, message) => {
+    return {
+        success,
+        message
+    }
+}
 
 module.exports = {
-  response,
-};
+    response
+}

@@ -2,13 +2,16 @@ const router = require("express").Router();
 const Queue = require("bull");
 const {response} = require('../utils/util')
 
-const REDIS_URL = process.env.REDIS_URL || "redis://127.0.0.1:6379";
-const workQueue = new Queue("work", REDIS_URL);
+const workQueue = new Queue("work", {redis: {port: 6379, host: 'redis'}}); 
 
 router.get("/schedule", async (req, res) => {
   try {
     const job = await workQueue.add({ name: "pokemon", status: "Processing" });
-    res.sendSuccess(response(true, `Job Successfully created`, { id: job.id }))
+    res.sendSuccess({
+      succes: true, 
+      message: `Job Successfully created`, 
+      data: { id: job.id }
+    })
   } catch (e) {
     res.sendInternalServerError()
   }
@@ -25,7 +28,7 @@ router.get("/status/:id", async (req, res) => {
       let reason = job.failedReason;
       return res.sendSuccess({ id, state, progress, reason })
     }
-    res.sendSuccess(response(false, `Job with job id ${id} not found. Please check the id and try again.`, null))
+    res.sendSuccess(response(false, `Job with job id ${id} not found. Please check the id and try again.`))
 
   } catch (e) {
     res.sendInternalServerError()
@@ -36,11 +39,17 @@ router.get("/pause/:id", async (req, res) => {
   try {
     const id = req.params.id;
     const job = await workQueue.getJob(id);
-    await job.update({
-      ...job.data,
-      status: "Paused"
-    })
-    return res.sendSuccess(response(true, `Job with task id ${id} PAUSED`, null))
+
+    if(job){
+      await job.update({
+        ...job.data,
+        status: "Paused"
+      })
+      return res.sendSuccess(response(true, `Job with job_id ${id} PAUSED`))
+    }else {
+      res.sendSuccess(response(false, `Cannot find job with job_id ${id}. Please check job_id and try again`))
+    }
+
   } catch (e) {
     res.sendInternalServerError()
   }
@@ -50,11 +59,17 @@ router.get("/resume/:id", async (req, res) => {
   try {
     const id = req.params.id;
     const job = await workQueue.getJob(id);
-    await job.update({
-      ...job.data,
-      status: "Processing"
-    })
-    return res.sendSuccess(response(true, `Job with task id ${id} Resumed`, null))
+
+    if (job){
+      await job.update({
+        ...job.data,
+        status: "Processing"
+      })
+      return res.sendSuccess(response(true, `Job with job_id ${id} RESUMED`))
+    }else {
+      res.sendSuccess(response(false, `Cannot find job with job_id ${id}. Please check job_id and try again`))
+    }
+  
   } catch (e) {
     res.sendInternalServerError()
   }
@@ -73,7 +88,7 @@ router.get("/terminate/:id", async (req, res) => {
       );
       return res.sendSuccess(response(true, `Job with job id ${id} terminated`, { id }))
     }
-    res.sendSuccess(response(false, `Job with job id ${id} not found. Please check the id and try again.`, null))
+    res.sendSuccess(response(false, `Job with job id ${id} not found. Please check the id and try again.`))
 
   } catch (e) {
     res.sendInternalServerError()
@@ -83,7 +98,7 @@ router.get("/terminate/:id", async (req, res) => {
 router.get("/pause-queue", async (req, res) => {
   try {
     await workQueue.pause();
-    res.sendSuccess(response(true, "Queue paused", null))
+    res.sendSuccess(response(true, "Queue paused"))
   } catch (e) {
     res.sendInternalServerError()
   }
@@ -92,7 +107,7 @@ router.get("/pause-queue", async (req, res) => {
 router.get("/resume-queue", async (req, res) => {
   try {
     await workQueue.resume();
-    res.sendSuccess(response(true, "Queue resumed", null))
+    res.sendSuccess(response(true, "Queue resumed"))
   } catch (e) {
     res.sendInternalServerError()
   }

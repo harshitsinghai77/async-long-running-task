@@ -2,7 +2,7 @@ const throng = require("throng");
 const Queue = require("bull");
 
 // Connect to a local redis instance locally, and the Heroku-provided URL in production
-const REDIS_URL = process.env.REDIS_URL || "redis://127.0.0.1:6379";
+// const REDIS_URL = process.env.REDIS_URL || "redis://127.0.0.1:6379";
 
 // Spin up multiple processes to handle jobs to take advantage of more CPU cores
 // See: https://devcenter.heroku.com/articles/node-concurrency for more info
@@ -22,7 +22,7 @@ function start(id) {
   console.log(`Started worker ${id}`);
 
   // Connect to the named work queue
-  const workQueue = new Queue("work", REDIS_URL);
+  const workQueue = new Queue("work", {redis: {port: 6379, host: 'redis'}}); 
 
   workQueue.process(maxJobsPerWorker, async (job) => {
     console.log(`Worker id ${id} working on job id ${job.id}`);
