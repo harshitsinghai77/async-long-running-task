@@ -12,11 +12,14 @@ require("dotenv").config();
 app.use(morgan("dev"));
 app.use(cors());
 
-// Custome middleware
+// Custom middleware
 app.use(serverResponseHandler());
 
 // Routes
 app.use("/job", JobRoutes);
+app.use("/", (req, res) => {
+  res.send("Hello world")
+});
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
