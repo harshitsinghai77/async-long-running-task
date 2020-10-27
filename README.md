@@ -22,16 +22,13 @@ Implemented the REST API in Nodejs and Bull. Deployed it inside the docker conta
 
 
 You can also:
-  - Check progress of the scheduled task
-  - Status of the terminated task
+  - Check progress and status of the scheduled/terminated task
   - Increase the sleep time of the long-running task
-  - Deploy the container in heroku or digital ocean
-
-You can run it locally or inside the docker container by linking redis image.
+  - Deploy the container
+  - Run it locally or inside the docker container
 
 > All the API documentation is been hosted in Postman Documentation
-And of course Dillinger itself is open source with a [public repository][dill]
- on GitHub.
+> All the API collection can be imported in Postman
 
 ### Installation
 
@@ -173,6 +170,9 @@ Navigate to your local address in your preferred browser.
 ```sh
 http://localhost:8002/
 ```
+
+Check the documentation for API endpoint under the Node section at https://documenter.getpostman.com/view/7585955/TVYGcHhU#b9e5a9b0-ffba-48a9-8879-c8df7eb04ba7
+
 ### Todos
 
  - Look for a better way to terminate task
