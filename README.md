@@ -31,7 +31,7 @@ You can run it locally or inside the docker container.
 The API requires [Go](https://golang.org/) 1.15.
 
 ```sh
-$ git clone https://github.com/harshitsinghai77/async-long-running-task.git -b go
+$ git clone https://github.com/harshitsinghai77/atlan-long-running-task.git -b go
 $ cd go
 $ go run jobs.go
 ```
