@@ -36,7 +36,7 @@ The backend requires [Python](https://www.python.org/) 3.5+ to run.
 Install the dependencies and devDependencies and start the server.
 
 ```sh
-$ git clone https://github.com/harshitsinghai77/async-long-running-task.git -b python-celery
+$ git clone https://github.com/harshitsinghai77/atlan-long-running-task.git -b python-celery
 $ cd python
 $ pip install -r requirements.txt
 $ flask run --host=0.0.0.0 --port=8003
