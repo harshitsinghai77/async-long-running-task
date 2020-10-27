@@ -98,9 +98,9 @@ func terminateJobHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	fmt.Printf("Starting server at port 8080\n")
+	fmt.Printf("Starting server at port 8004\n")
 	http.HandleFunc("/schedule", scheduleJobHandler)
 	http.HandleFunc("/terminate", terminateJobHandler)
 	http.HandleFunc("/", helloWorldHandler)
-	log.Fatal(http.ListenAndServe(":8001", nil))
+	log.Fatal(http.ListenAndServe(":8004", nil))
 }
