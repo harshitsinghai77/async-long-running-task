@@ -4,7 +4,7 @@
 Atlan Collect has a variety of long-running tasks that require time and resources on the servers. As it stands now, once we have triggered off a long-running task, there is no way to tap into it and pause/stop/terminate the task, upon realizing that an erroneous request went through from one of the clients (mostly web or pipeline).
 
 ## Solution
-We want to offer an implementation through which the user can now stop the long-running task at any given point in time, and can choose to resume or terminate it.
+User can now stop the long-running task at any given point in time, and can choose to resume or terminate it.
 
 This will ensure that the resources like compute/memory/storage/time are used efficiently at our end, and do not go into processing tasks that have already been stopped.
 
@@ -27,6 +27,12 @@ You can run it locally or inside the docker container.
 > All the implementations are heavily documented. Get in touch with me if there's any problem or issue.
 
 > All the long running task are mimicked using time.sleep and a simple counter instead of a uploading document. Uploading file can easily be implemented and serves no purpose to mimic a long running task. I hope time.sleep mimicks the long running task to satisfactory. 
+
+## Complete API Documentations
+#### https://documenter.getpostman.com/view/7585955/TVYGcHhU#4beb8834-b4b1-47aa-b077-355ed55fb765
+
+## Postman Collection 
+#### Public link https://www.getpostman.com/collections/41c92006df55df5d0726
 
 ## Python
 ##### Python Implementation
