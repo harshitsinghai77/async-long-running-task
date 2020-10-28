@@ -28,34 +28,34 @@ You can run it locally or inside the docker container.
 
 > All the long running task are mimicked using time.sleep and a simple counter instead of a uploading document. Uploading file can easily be implemented and serves no purpose to mimic a long running task. I hope time.sleep mimicks the long running task to satisfactory. 
 
-#### API Documentations
-###### https://documenter.getpostman.com/view/7585955/TVYGcHhU#4beb8834-b4b1-47aa-b077-355ed55fb765
+### API Documentations
+#### https://documenter.getpostman.com/view/7585955/TVYGcHhU#4beb8834-b4b1-47aa-b077-355ed55fb765
 
-#### Postman Collection 
-###### Public link https://www.getpostman.com/collections/41c92006df55df5d0726
+### Postman Collection 
+#### Public link https://www.getpostman.com/collections/41c92006df55df5d0726
 
 ## Python
-##### Python Implementation
-###### https://github.com/harshitsinghai77/atlan-long-running-task/tree/python-celery
+### Python Implementation
+#### https://github.com/harshitsinghai77/atlan-long-running-task/tree/python-celery
 
-##### Python Documentation
-###### https://documenter.getpostman.com/view/7585955/TVYGcHhU#0ad6b290-9fb9-47bc-afa1-776979f21c9b
+### Python Documentation
+#### https://documenter.getpostman.com/view/7585955/TVYGcHhU#0ad6b290-9fb9-47bc-afa1-776979f21c9b
 
 ## Node
 
-##### Node Implementation
-###### https://github.com/harshitsinghai77/atlan-long-running-task/tree/node_bull
+### Node Implementation
+#### https://github.com/harshitsinghai77/atlan-long-running-task/tree/node_bull
 
-##### Python Documentation
-###### https://documenter.getpostman.com/view/7585955/TVYGcHhU#b9e5a9b0-ffba-48a9-8879-c8df7eb04ba7
+### Python Documentation
+#### https://documenter.getpostman.com/view/7585955/TVYGcHhU#b9e5a9b0-ffba-48a9-8879-c8df7eb04ba7
 
 ## Go
 
-##### Go Implementation
-###### https://github.com/harshitsinghai77/atlan-long-running-task/tree/go
+### Go Implementation
+#### https://github.com/harshitsinghai77/atlan-long-running-task/tree/go
 
-##### Go Documentation
-###### https://documenter.getpostman.com/view/7585955/TVYGcHhU#4beb8834-b4b1-47aa-b077-355ed55fb765
+### Go Documentation
+#### https://documenter.getpostman.com/view/7585955/TVYGcHhU#4beb8834-b4b1-47aa-b077-355ed55fb765
 
 ### Docker
 [![N|Solid](https://i.ibb.co/0GSDfJx/all-docker.png)](https://i.ibb.co/0GSDfJx/all-docker.png)
