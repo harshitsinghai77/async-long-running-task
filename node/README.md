@@ -27,8 +27,9 @@ You can also:
   - Deploy the container
   - Run it locally or inside the docker container
 
-> All the API documentation is been hosted in Postman Documentation
-> All the API collection can be imported in Postman
+> All the API documentation is hosted using Postman Documentation (https://documenter.getpostman.com/view/7585955/TVYJ4w46)
+
+> All the API collection can be imported in Postman (https://www.getpostman.com/collections/41c92006df55df5d0726)
 
 ### Installation
 
@@ -160,7 +161,7 @@ Cheers!
 ### API Endpoints
 The API is well documented and hosted on Postman
 
-Postman Documentation: https://documenter.getpostman.com/view/7585955/TVYGcHhU
+Postman Documentation: https://documenter.getpostman.com/view/7585955/TVYJ4w46
 
 Postman Collection Public link
 https://www.getpostman.com/collections/41c92006df55df5d0726
@@ -171,7 +172,7 @@ Navigate to your local address in your preferred browser.
 http://localhost:8002/
 ```
 
-Check the documentation for API endpoint under the Node section at https://documenter.getpostman.com/view/7585955/TVYGcHhU#b9e5a9b0-ffba-48a9-8879-c8df7eb04ba7
+Check the documentation for API endpoint under the Node section at https://documenter.getpostman.com/view/7585955/TVYJ4w46#0a17410c-ff21-433a-a138-ec6a370e8056
 
 ### Todos
 

@@ -26,8 +26,9 @@ You can also:
 
 You can run it locally or inside the docker container.
 
-> All the API documentation is hosted using Postman Documentation
-> All the API collection can be imported in Postman
+> All the API documentation is hosted using Postman Documentation (https://documenter.getpostman.com/view/7585955/TVYJ4w46)
+
+> All the API collection can be imported in Postman (https://www.getpostman.com/collections/41c92006df55df5d0726)
 
 ### Installation
 
@@ -164,7 +165,7 @@ If you get the above screen, you're doing great. Cheers!
 ### API Endpoints
 The API is well documented and hosted on Postman
 
-Postman Documentation: https://documenter.getpostman.com/view/7585955/TVYGcHhU
+Postman Documentation: https://documenter.getpostman.com/view/7585955/TVYJ4w46
 
 Postman Collection Public link
 https://www.getpostman.com/collections/41c92006df55df5d0726
@@ -174,7 +175,7 @@ Navigate to your local address in your preferred browser.
 ```sh
 http://localhost:8002/
 ```
-And test the API endpoints under the Python section at https://documenter.getpostman.com/view/7585955/TVYGcHhU#0ad6b290-9fb9-47bc-afa1-776979f21c9b
+And test the API endpoints under the Python section at https://documenter.getpostman.com/view/7585955/TVYJ4w46#a103266c-163e-4a00-91a3-e6b629706156
 
 ### Todos
 
