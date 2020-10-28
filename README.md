@@ -46,7 +46,7 @@ You can run it locally or inside the docker container.
 ### Node Implementation
 #### https://github.com/harshitsinghai77/atlan-long-running-task/tree/node_bull
 
-### Python Documentation
+### Node Documentation
 #### https://documenter.getpostman.com/view/7585955/TVYGcHhU#b9e5a9b0-ffba-48a9-8879-c8df7eb04ba7
 
 ## Go
