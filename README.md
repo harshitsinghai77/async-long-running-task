@@ -23,8 +23,9 @@ You can also:
 
 You can run it locally or inside the docker container.
 
-> All the API documentation is hosted using Postman Documentation
-> All the API collection can be imported in Postman
+> All the API documentation is hosted using Postman Documentation (https://documenter.getpostman.com/view/7585955/TVYJ4w46)
+
+> All the API collection can be imported in Postman (https://www.getpostman.com/collections/41c92006df55df5d0726)
 
 ### Installation
 
@@ -97,7 +98,7 @@ Cheers!
 ### API Endpoints
 The API is well documented and hosted on Postman
 
-Postman Documentation: https://documenter.getpostman.com/view/7585955/TVYGcHhU
+Postman Documentation:https://documenter.getpostman.com/view/7585955/TVYJ4w46
 
 Postman Collection Public link
 https://www.getpostman.com/collections/41c92006df55df5d0726
@@ -107,7 +108,7 @@ Navigate to your local address in your preferred browser.
 ```sh
 http://localhost:8002/
 ```
-And test the API endpoints under the Python section at https://documenter.getpostman.com/view/7585955/TVYGcHhU#4beb8834-b4b1-47aa-b077-355ed55fb765
+And test the API endpoints under the Python section at https://documenter.getpostman.com/view/7585955/TVYJ4w46#5ca0842d-2216-4b4b-930e-eebe324427ab
 
 ### Terminate task and Status
 Due to time constraint, I couldn't implement status/pause/resume job endpoints. But you can check the status and the termination of the task through terminal.
