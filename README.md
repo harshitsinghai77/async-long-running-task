@@ -28,6 +28,7 @@ You can also:
   - Run it locally or inside the docker container
 
 > All the API documentation is hosted using Postman Documentation (https://documenter.getpostman.com/view/7585955/TVYJ4w46)
+
 > All the API collection can be imported in Postman (https://www.getpostman.com/collections/41c92006df55df5d0726)
 
 ### Installation
