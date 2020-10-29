@@ -3,9 +3,9 @@ import os
 class Config(object):
     DEBUG = False
 
-    BROKER_URL = os.getenv("BROKER_URL", 'redis://redis:6379/0')
+    BROKER_URL = os.getenv("BROKER_URL", 'redis://localhost:6379/')
     CELERY_RESULT_BACKEND = os.getenv(
-        "CELERY_RESULT_BACKEND", 'redis://redis:6379/0'
+        "CELERY_RESULT_BACKEND", 'redis://localhost:6379/'
     )
     CELERY_SEND_SENT_EVENT = True
 
