@@ -4,8 +4,6 @@
 
 REST API to schedule/terminate a long-running task. This will ensure that resources like compute/memory/storage/time are used efficiently.
 
-Implemented the REST API using Go.
-
   - Getting started
   - Running it locally
   - Doploying it to a docker container
