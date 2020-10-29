@@ -160,7 +160,7 @@ Verify the deployment by navigating to your server address in your preferred bro
 ```sh
 http://localhost:8003/
 ```
-If you get the above screen, you're doing great. Cheers!
+Cheers!
 
 ### API Endpoints
 The API is well documented and hosted on Postman
