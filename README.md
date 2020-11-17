@@ -44,7 +44,7 @@ You can run it locally or inside the docker container.
 
 ### Python Implementation
 
-#### https://github.com/harshitsinghai77/atlan-long-running-task/tree/python-celery
+#### https://github.com/harshitsinghai77/schedule-long-task-using-python-node-go/tree/python-celery
 
 ### Python Documentation
 
@@ -54,7 +54,7 @@ You can run it locally or inside the docker container.
 
 ### Node Implementation
 
-#### https://github.com/harshitsinghai77/atlan-long-running-task/tree/node_bull
+#### https://github.com/harshitsinghai77/schedule-long-task-using-python-node-go/tree/node_bull
 
 ### Node Documentation
 
@@ -64,7 +64,7 @@ You can run it locally or inside the docker container.
 
 ### Go Implementation
 
-#### https://github.com/harshitsinghai77/atlan-long-running-task/tree/go
+#### https://github.com/harshitsinghai77/schedule-long-task-using-python-node-go/tree/go
 
 ### Go Documentation
 
@@ -87,9 +87,9 @@ Few libraries which were heavily used are
 ### Running it Locally
 
 Go to the specific branch to find out more.
-Python: https://github.com/harshitsinghai77/atlan-long-running-task/tree/python-celery
-Node: https://github.com/harshitsinghai77/atlan-long-running-task/tree/node_bull
-Go: https://github.com/harshitsinghai77/atlan-long-running-task/tree/go
+Python: https://github.com/harshitsinghai77/schedule-long-task-using-python-node-go/tree/python-celery
+Node: https://github.com/harshitsinghai77/schedule-long-task-using-python-node-go/tree/node_bull
+Go: https://github.com/harshitsinghai77/schedule-long-task-using-python-node-go/tree/go
 
 Cheers!
 
