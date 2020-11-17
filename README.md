@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Long Running task with Python Node and Go
 
 ## Problem
@@ -129,8 +128,8 @@ Implemented the REST API in Nodejs and Bull. Deployed it inside the docker conta
 
 - Getting started
 - Connecting it to redis client locally
-- Deploying it in docker container and linking to redis
-=======
+- # Deploying it in docker container and linking to redis
+
 # Go + Docker
 
 [![N|Solid](https://miro.medium.com/max/750/1*xLKFtlXiTPif_hTAIlXRjw.jpeg)](https://github.com/OptimalBits/bull)
@@ -140,12 +139,12 @@ REST API to schedule/terminate a long-running task. This will ensure that resour
 - Getting started
 - Running it locally
 - Doploying it to a docker container
->>>>>>> go
+  > > > > > > > go
 
 # New Features!
 
 - Schedule a task
-<<<<<<< HEAD
+  <<<<<<< HEAD
 - Check status of the scheduled task
 - Pause a task
 - Resume a task
@@ -158,8 +157,7 @@ You can also:
 - Check progress and status of the scheduled/terminated task
 - Increase the sleep time of the long-running task
 - Deploy the container
-- Run it locally or inside the docker container
-=======
+- # Run it locally or inside the docker container
 - Terminate a task
 
 You can also:
@@ -169,7 +167,8 @@ You can also:
 - Deploy the container
 
 You can run it locally or inside the docker container.
->>>>>>> go
+
+> > > > > > > go
 
 > All the API documentation is hosted using Postman Documentation (https://documenter.getpostman.com/view/7585955/TVYJ4w46)
 
@@ -201,7 +200,7 @@ $ node worker.js
 
 Second Tab:
 
-```sh
+````sh
 $ node app.js
 =======
 The API requires [Go](https://golang.org/) 1.15.
@@ -211,18 +210,18 @@ $ git clone https://github.com/harshitsinghai77/schedule-long-task-using-python-
 $ cd go
 $ go run jobs.go
 >>>>>>> go
-```
+````
 
 ### Libraries
 
 The project is currently using these core libraries for it's use.
 
 <<<<<<< HEAD
-| Plugin  | README                                 |
+| Plugin | README |
 | ------- | -------------------------------------- |
-| Express | https://github.com/expressjs/express   |
-| Bull    | https://github.com/OptimalBits/bull    |
-| Throng  | https://github.com/hunterloftis/throng |
+| Express | https://github.com/expressjs/express |
+| Bull | https://github.com/OptimalBits/bull |
+| Throng | https://github.com/hunterloftis/throng |
 
 ### Running it Locally
 
@@ -262,7 +261,7 @@ $ node worker.js
 
 Second Tab:
 
-```sh
+````sh
 $ node app.js
 =======
 | Plugin   | README                           |
@@ -278,7 +277,7 @@ First Tab:
 ```sh
 $ go run jobs.go
 >>>>>>> go
-```
+````
 
 Verify the deployment by navigating to your server address in your preferred browser.
 
@@ -321,7 +320,7 @@ $ sudo docker run -d -p 8002:8002 --link redis IMAGE_ID
 
 For example
 
-```sh
+````sh
 $ sudo docker run -d -p 8002:8002 --link redis 76c88fce8fa7
 =======
 Build docker image of the current project.
@@ -329,7 +328,7 @@ Navigate to the working directory and run the following commands
 
 ```sh
 $ sudo docker build -t atlandockerapp:go .
-```
+````
 
 Create docker image
 
@@ -382,10 +381,10 @@ The API is well documented and hosted on Postman
 <<<<<<< HEAD
 Postman Documentation: https://documenter.getpostman.com/view/7585955/TVYJ4w46
 
-> > > > > > > node_bull
-=======
-Postman Documentation:https://documenter.getpostman.com/view/7585955/TVYJ4w46
->>>>>>> go
+> > > > > > > # node_bull
+> > > > > > >
+> > > > > > > Postman Documentation:https://documenter.getpostman.com/view/7585955/TVYJ4w46
+> > > > > > > go
 
 Postman Collection Public link
 https://www.getpostman.com/collections/41c92006df55df5d0726
@@ -411,9 +410,9 @@ Check the documentation for API endpoint under the Node section at https://docum
 - Check Bee Queue https://github.com/bee-queue/bee-queue
   > > > > > > > # python-celery
 - Look for a gracefuly way to manage execution and termination of threads.
-  > > > > > > > node_bull
-=======
-And test the API endpoints under the Python section at https://documenter.getpostman.com/view/7585955/TVYJ4w46#5ca0842d-2216-4b4b-930e-eebe324427ab
+  > > > > > > > # node_bull
+  > > > > > > >
+  > > > > > > > And test the API endpoints under the Python section at https://documenter.getpostman.com/view/7585955/TVYJ4w46#5ca0842d-2216-4b4b-930e-eebe324427ab
 
 ### Terminate task and Status
 
@@ -430,7 +429,7 @@ Due to time constraint, I couldn't implement status/pause/resume job endpoints. 
 - Add feature to pause the job
 - Add feature to resume the job
 - Implement Go Celery to handle the different stages of task execution
->>>>>>> go
+  > > > > > > > go
 
 ## License
 
