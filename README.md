@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Long Running task with Python Node and Go
 
 ## Problem
@@ -129,10 +130,22 @@ Implemented the REST API in Nodejs and Bull. Deployed it inside the docker conta
 - Getting started
 - Connecting it to redis client locally
 - Deploying it in docker container and linking to redis
+=======
+# Go + Docker
+
+[![N|Solid](https://miro.medium.com/max/750/1*xLKFtlXiTPif_hTAIlXRjw.jpeg)](https://github.com/OptimalBits/bull)
+
+REST API to schedule/terminate a long-running task. This will ensure that resources like compute/memory/storage/time are used efficiently.
+
+- Getting started
+- Running it locally
+- Doploying it to a docker container
+>>>>>>> go
 
 # New Features!
 
 - Schedule a task
+<<<<<<< HEAD
 - Check status of the scheduled task
 - Pause a task
 - Resume a task
@@ -146,6 +159,17 @@ You can also:
 - Increase the sleep time of the long-running task
 - Deploy the container
 - Run it locally or inside the docker container
+=======
+- Terminate a task
+
+You can also:
+
+- Check progress and status of the scheduled/terminated task in command line
+- Increase the sleep time of the long-running task
+- Deploy the container
+
+You can run it locally or inside the docker container.
+>>>>>>> go
 
 > All the API documentation is hosted using Postman Documentation (https://documenter.getpostman.com/view/7585955/TVYJ4w46)
 
@@ -153,6 +177,7 @@ You can also:
 
 ### Installation
 
+<<<<<<< HEAD
 The backend requires [Node.js](https://nodejs.org/) v10+ to run.
 
 Install the dependencies and devDependencies and start the server.
@@ -178,12 +203,21 @@ Second Tab:
 
 ```sh
 $ node app.js
+=======
+The API requires [Go](https://golang.org/) 1.15.
+
+```sh
+$ git clone https://github.com/harshitsinghai77/schedule-long-task-using-python-node-go.git -b go
+$ cd go
+$ go run jobs.go
+>>>>>>> go
 ```
 
 ### Libraries
 
 The project is currently using these core libraries for it's use.
 
+<<<<<<< HEAD
 | Plugin  | README                                 |
 | ------- | -------------------------------------- |
 | Express | https://github.com/expressjs/express   |
@@ -230,18 +264,37 @@ Second Tab:
 
 ```sh
 $ node app.js
+=======
+| Plugin   | README                           |
+| -------- | -------------------------------- |
+| net/http | https://golang.org/pkg/net/http/ |
+| context  | https://golang.org/pkg/context/  |
+| sync     | https://golang.org/pkg/sync/     |
+
+### Running it Locally
+
+First Tab:
+
+```sh
+$ go run jobs.go
+>>>>>>> go
 ```
 
 Verify the deployment by navigating to your server address in your preferred browser.
 
 ```sh
+<<<<<<< HEAD
 http://localhost:8002/
+=======
+http://localhost:8004/
+>>>>>>> go
 ```
 
 #### Building for Docker
 
 For running the project inside the docker container:
 
+<<<<<<< HEAD
 Install redis image using docker
 
 ```sh
@@ -270,6 +323,19 @@ For example
 
 ```sh
 $ sudo docker run -d -p 8002:8002 --link redis 76c88fce8fa7
+=======
+Build docker image of the current project.
+Navigate to the working directory and run the following commands
+
+```sh
+$ sudo docker build -t atlandockerapp:go .
+```
+
+Create docker image
+
+```sh
+$ sudo docker run -d -p 8004:8004 YOUR_BUILD_IMAGE_ID
+>>>>>>> go
 ```
 
 Get the docker container CONTAINER_ID
@@ -287,16 +353,24 @@ $ sudo docker logs CONTAINER_ID
 You will see something like
 
 ```text
+<<<<<<< HEAD
 Listening to port 8002
 Started worker 3
 Started worker 2
 Started worker 1
+=======
+ Starting server at port 8004
+>>>>>>> go
 ```
 
 Verify the deployment by navigating to your server address in your preferred browser.
 
 ```sh
+<<<<<<< HEAD
 http://localhost:8002/
+=======
+http://localhost:8004/
+>>>>>>> go
 ```
 
 Cheers!
@@ -305,9 +379,13 @@ Cheers!
 
 The API is well documented and hosted on Postman
 
+<<<<<<< HEAD
 Postman Documentation: https://documenter.getpostman.com/view/7585955/TVYJ4w46
 
 > > > > > > > node_bull
+=======
+Postman Documentation:https://documenter.getpostman.com/view/7585955/TVYJ4w46
+>>>>>>> go
 
 Postman Collection Public link
 https://www.getpostman.com/collections/41c92006df55df5d0726
@@ -318,6 +396,7 @@ Navigate to your local address in your preferred browser.
 http://localhost:8002/
 ```
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 And test the API endpoints under the Python section at https://documenter.getpostman.com/view/7585955/TVYJ4w46#a103266c-163e-4a00-91a3-e6b629706156
 =======
@@ -333,6 +412,25 @@ Check the documentation for API endpoint under the Node section at https://docum
   > > > > > > > # python-celery
 - Look for a gracefuly way to manage execution and termination of threads.
   > > > > > > > node_bull
+=======
+And test the API endpoints under the Python section at https://documenter.getpostman.com/view/7585955/TVYJ4w46#5ca0842d-2216-4b4b-930e-eebe324427ab
+
+### Terminate task and Status
+
+Due to time constraint, I couldn't implement status/pause/resume job endpoints. But you can check the status and the termination of the task through terminal.
+
+[![N|Solid](https://i.ibb.co/ZLSBd22/go-task.png)](https://i.ibb.co/gjdSy44/go-task.png)
+
+[![N|Solid](https://i.ibb.co/4p7xbTK/go-terminate-task.png)](https://i.ibb.co/gjdSy44/go-task.png)
+
+### Todos
+
+- Implement Go Celery - https://github.com/gocelery/gocelery
+- Add feature to check the status of the running job
+- Add feature to pause the job
+- Add feature to resume the job
+- Implement Go Celery to handle the different stages of task execution
+>>>>>>> go
 
 ## License
 
