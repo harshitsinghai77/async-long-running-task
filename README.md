@@ -87,9 +87,10 @@ Few libraries which were heavily used are
 ### Running it Locally
 
 Go to the specific branch to find out more.
-Python: https://github.com/harshitsinghai77/schedule-long-task-using-python-node-go/tree/python-celery
-Node: https://github.com/harshitsinghai77/schedule-long-task-using-python-node-go/tree/node_bull
-Go: https://github.com/harshitsinghai77/schedule-long-task-using-python-node-go/tree/go
+
+1. Python: https://github.com/harshitsinghai77/schedule-long-task-using-python-node-go/tree/python-celery
+2. Node: https://github.com/harshitsinghai77/schedule-long-task-using-python-node-go/tree/node_bull
+3. Go: https://github.com/harshitsinghai77/schedule-long-task-using-python-node-go/tree/go
 
 Cheers!
 
