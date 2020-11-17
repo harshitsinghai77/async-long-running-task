@@ -97,6 +97,8 @@ Cheers!
 
 The API is well documented and hosted on Postman
 
+<<<<<<< HEAD
+
 ### Postman Documentation:
 
 #### https://documenter.getpostman.com/view/7585955/TVYJ4w46
@@ -112,7 +114,26 @@ The API is well documented and hosted on Postman
 
 #### Some useful information
 
-> Due to time constraints, all the features in Go are not completed yet. You can shedule and terminate the task but you cannot Pause/Resume and check the status of the running task via API as of now. Progress of the long running task can be tracked via the terminal shell. In future, I will be using gocelery to make a more robust implementation for Go.
+> # Due to time constraints, all the features in Go are not completed yet. You can shedule and terminate the task but you cannot Pause/Resume and check the status of the running task via API as of now. Progress of the long running task can be tracked via the terminal shell. In future, I will be using gocelery to make a more robust implementation for Go.
+>
+> Postman Documentation: https://documenter.getpostman.com/view/7585955/TVYJ4w46
+
+Postman Collection Public link
+https://www.getpostman.com/collections/41c92006df55df5d0726
+
+Navigate to your local address in your preferred browser.
+
+```sh
+http://localhost:8002/
+```
+
+And test the API endpoints under the Python section at https://documenter.getpostman.com/view/7585955/TVYJ4w46#a103266c-163e-4a00-91a3-e6b629706156
+
+### Todos
+
+- Look for a better way to terminate task
+- Check Bee Queue https://github.com/bee-queue/bee-queue
+  > > > > > > > python-celery
 
 ## License
 
